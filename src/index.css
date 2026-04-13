@@ -702,6 +702,42 @@ img {
     grid-row: auto;
   }
 
+  .wall-order-1 {
+    order: 1;
+  }
+
+  .wall-order-9 {
+    order: 2;
+  }
+
+  .wall-order-3 {
+    order: 3;
+  }
+
+  .wall-order-5 {
+    order: 4;
+  }
+
+  .wall-order-4 {
+    order: 5;
+  }
+
+  .wall-order-7 {
+    order: 6;
+  }
+
+  .wall-order-6 {
+    order: 7;
+  }
+
+  .wall-order-8 {
+    order: 8;
+  }
+
+  .wall-order-2 {
+    order: 9;
+  }
+
   .slot-landscape {
     grid-column: span 2;
   }
