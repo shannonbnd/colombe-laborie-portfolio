@@ -49,7 +49,7 @@ const artworks = [
     category: 'Freelance',
     year: '2025',
     images: [
-      '/image/Ordre_De_Malte_-_Solidarité_.jpg',
+      '/image/ordre-de-malte-solidarite.jpg',
       '/image/secours.png',
     ],
     description:
@@ -203,6 +203,7 @@ function Carousel({ onOpenGallery, onCursorStateChange }) {
   const holdAnimationRef = useRef(null)
   const launchAnimationRef = useRef(null)
   const rotationAnimationRef = useRef(null)
+  const launchProgressRef = useRef(0)
 
   useEffect(() => {
     const updateRadius = () => {
@@ -219,23 +220,31 @@ function Carousel({ onOpenGallery, onCursorStateChange }) {
   }, [])
 
   useEffect(() => {
+    launchProgressRef.current = launchProgress
+  }, [launchProgress])
+
+  useEffect(() => {
     let previousTime = performance.now()
 
     const animateRotation = (now) => {
       const frameFactor = (now - previousTime) / 16.6667
       previousTime = now
 
-      const boostedSpeed = 55 * launchProgress * launchProgress * launchProgress
+      const progress = launchProgressRef.current
+      const boostedSpeed = 55 * progress * progress * progress
       const speed = 0.05 + boostedSpeed
 
-      setRotation((prev) => prev + speed * frameFactor)
+      setRotation((prev) => {
+        const next = prev + speed * frameFactor
+        return next >= 360 ? next - 360 : next
+      })
       rotationAnimationRef.current = requestAnimationFrame(animateRotation)
     }
 
     rotationAnimationRef.current = requestAnimationFrame(animateRotation)
 
     return () => cancelAnimationFrame(rotationAnimationRef.current)
-  }, [launchProgress])
+  }, [])
 
   useEffect(() => {
     return () => {

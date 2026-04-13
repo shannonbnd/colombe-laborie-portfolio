@@ -177,8 +177,9 @@ img {
   left: 50%;
   top: 50%;
   transform-style: preserve-3d;
-  transition: transform 0.1s linear, opacity 0.2s ease, filter 0.2s ease;
+  transition: opacity 0.2s ease, filter 0.2s ease;
   will-change: transform;
+  backface-visibility: hidden;
   cursor: none;
 }
 
@@ -684,8 +685,13 @@ img {
   .gallery-wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-auto-rows: auto;
-    gap: 12px;
-    align-items: end;
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .gallery-slot-button {
+    display: flex;
+    justify-content: center;
   }
 
   .wall-order-1,
@@ -706,14 +712,17 @@ img {
   }
 
   .slot-portrait .frame {
+    width: 100%;
     height: 304px;
   }
 
   .slot-landscape .frame {
+    width: 100%;
     height: 188px;
   }
 
   .slot-small .frame {
+    width: 100%;
     height: 154px;
   }
 
@@ -778,16 +787,34 @@ img {
     height: 194px;
   }
 
+  .gallery-shell {
+    max-width: 340px;
+  }
+
+  .gallery-wall {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    justify-items: center;
+  }
+
+  .gallery-slot,
+  .slot-landscape {
+    grid-column: 1 / -1;
+  }
+
   .slot-portrait .frame {
-    height: 238px;
+    width: min(100%, 236px);
+    height: 320px;
   }
 
   .slot-landscape .frame {
-    height: 148px;
+    width: 100%;
+    height: 176px;
   }
 
   .slot-small .frame {
-    height: 130px;
+    width: min(100%, 210px);
+    height: 210px;
   }
 
   .gallery-back-button {
