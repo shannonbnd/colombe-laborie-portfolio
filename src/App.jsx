@@ -7,9 +7,9 @@ const artworks = [
     category: 'Freelance',
     year: '2026',
     images: [
-      './image/a69cbb1a-174f-4bc8-8a79-e7e2a3a4f0dc_rw_1920-1.png',
-      './image/trio2.png',
-      './image/letrio1.png',
+      '/image/a69cbb1a-174f-4bc8-8a79-e7e2a3a4f0dc_rw_1920-1.png',
+      '/image/trio2.png',
+      '/image/letrio1.png',
     ],
     description:
       "Affiche pour l'association Héritage pour un événement costumé, avec pour contrainte de tout faire en illustration.",
@@ -20,10 +20,10 @@ const artworks = [
     category: 'Freelance',
     year: '2026',
     images: [
-      './image/plateau-de-jeu-A4-V2-CMJN.png',
-      './image/eau.png',
-      './image/eglise.png',
-      './image/ND.png',
+      '/image/plateau-de-jeu-A4-V2-CMJN.png',
+      '/image/eau.png',
+      '/image/eglise.jpeg',
+      '/image/ND.png',
     ],
     description:
       'Plateau de jeu de société alliant un univers aventurier, un "Où est Charlie ?" et un "Cluedo".',
@@ -34,11 +34,11 @@ const artworks = [
     category: 'École',
     year: '2026',
     images: [
-      './image/square-box-mockups-on-concrete-isometric.png',
-      './image/mockup1.png',
-      './image/mockup2.png',
-      './image/mockup3.png',
-      './image/mockup4.png',
+      '/image/square-box-mockups-on-concrete-isometric.png',
+      '/image/mockup1.png',
+      '/image/mockup2.png',
+      '/image/mockup3.png',
+      '/image/mockup4.png',
     ],
     description:
       "Branding 360 pour une marque de coupe menstruelle, de la stratégie à l'identité.",
@@ -49,8 +49,8 @@ const artworks = [
     category: 'Freelance',
     year: '2025',
     images: [
-      './image/Ordre_De_Malte_-_Solidarité_.jpg',
-      './image/secours.png',
+      '/image/Ordre_De_Malte_-_Solidarité_.jpg',
+      '/image/secours.png',
     ],
     description:
       "Projet d'illustration freelance pour l'Ordre de Malte en 2025.",
@@ -61,9 +61,9 @@ const artworks = [
     category: 'Freelance',
     year: '2026',
     images: [
-      './image/esp.png',
-      './image/esp1.png',
-      './image/esp2.png',
+      '/image/esp.png',
+      '/image/esp1.png',
+      '/image/esp2.png',
     ],
     description: 'Identité visuelle pour une marque de bijoux.',
   },
@@ -73,7 +73,7 @@ const artworks = [
     category: 'École',
     year: '2026',
     images: [
-      './image/VI_phase_02_FINAL.png',
+      '/image/VI_phase_02_FINAL.png',
     ],
     description:
       'Infographie sur les personnes âgées en maison pour aînés au Québec.',
@@ -84,9 +84,9 @@ const artworks = [
     category: 'École',
     year: '2026',
     images: [
-      './image/bre1.PNG',
-      './image/bre2.PNG',
-      './image/bre3.PNG',
+      '/image/bre1.PNG',
+      '/image/bre2.PNG',
+      '/image/bre3.PNG',
     ],
     description:
       "Création d'étiquettes de bouteilles de bière illustrant le conflit entre les Normands et les Bretons autour du Mont-Saint-Michel.",
@@ -97,10 +97,10 @@ const artworks = [
     category: 'École',
     year: '2026',
     images: [
-      './image/parfum_prada.png',
-      './image/1.png',
-      './image/2.png.avif',
-      './image/3.png',
+      '/image/parfum_prada.png',
+      '/image/1.png',
+      '/image/2.jpg.avif',
+      '/image/3.png',
     ],
     description:
       "Projet phygital autour d'un parfum Prada, mêlant une expérience digitale immersive et un gifting innovant.",
@@ -111,12 +111,12 @@ const artworks = [
     category: 'Personnel',
     year: '2025',
     images: [
-      './image/DSC_4347.jpg',
-      './image/bagel1.png',
-      './image/bagel2.png',
-      './image/etiquettebaguel1.png',
-      './image/etiquettebaguel2.png',
-      './image/etiquettebageul3.png',
+      '/image/DSC_4347.jpg',
+      '/image/baguel1.jpg',
+      '/image/baguel2.jpg',
+      '/image/etiquettebaguel1.png',
+      '/image/etiquettebaguel2.png',
+      '/image/etiquettebageul3.png',
     ],
     description:
       'Marque de bagels fictive important la gastronomie des régions françaises dans les bagels à New York.',
