@@ -685,13 +685,8 @@ img {
   .gallery-wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-auto-rows: auto;
-    gap: 18px;
-    align-items: stretch;
-  }
-
-  .gallery-slot-button {
-    display: flex;
-    justify-content: center;
+    gap: 12px;
+    align-items: end;
   }
 
   .wall-order-1,
@@ -712,17 +707,14 @@ img {
   }
 
   .slot-portrait .frame {
-    width: 100%;
     height: 304px;
   }
 
   .slot-landscape .frame {
-    width: 100%;
     height: 188px;
   }
 
   .slot-small .frame {
-    width: 100%;
     height: 154px;
   }
 
@@ -787,34 +779,16 @@ img {
     height: 194px;
   }
 
-  .gallery-shell {
-    max-width: 340px;
-  }
-
-  .gallery-wall {
-    grid-template-columns: 1fr;
-    gap: 26px;
-    justify-items: center;
-  }
-
-  .gallery-slot,
-  .slot-landscape {
-    grid-column: 1 / -1;
-  }
-
   .slot-portrait .frame {
-    width: min(100%, 236px);
-    height: 320px;
+    height: 238px;
   }
 
   .slot-landscape .frame {
-    width: 100%;
-    height: 176px;
+    height: 148px;
   }
 
   .slot-small .frame {
-    width: min(100%, 210px);
-    height: 210px;
+    height: 130px;
   }
 
   .gallery-back-button {
