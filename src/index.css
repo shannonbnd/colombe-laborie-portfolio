@@ -706,6 +706,12 @@ img {
     grid-column: span 2;
   }
 
+  .gallery-wall .slot-portrait .frame,
+  .gallery-wall .slot-landscape .frame,
+  .gallery-wall .slot-small .frame {
+    width: 100%;
+  }
+
   .slot-portrait .frame {
     height: 304px;
   }
@@ -777,6 +783,12 @@ img {
   .frame-portrait {
     width: 132px;
     height: 194px;
+  }
+
+  .gallery-wall .slot-portrait .frame,
+  .gallery-wall .slot-landscape .frame,
+  .gallery-wall .slot-small .frame {
+    width: 100%;
   }
 
   .slot-portrait .frame {
